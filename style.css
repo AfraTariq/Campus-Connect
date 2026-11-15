@@ -1,0 +1,328 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+header, div, body {
+	display: block;
+}
+header{
+	background-color: rgb(13, 50, 105);
+    height: 75px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+
+}
+.logo{
+	
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 10px;
+	color:white;
+}
+nav{
+	float: right;
+	align-content: center;
+}
+nav li{	 
+	font-size: 16px;
+	float: left;
+	text-align: center;
+	margin: 10px;
+	padding-right:10px;
+	list-style: none;
+
+}
+nav li a{
+	display: block;
+	color:white;
+	text-decoration: none;
+}	
+nav li a:hover{
+	border-bottom: 2px solid rgb(254, 225, 86);
+}
+#dropdown{
+	display: none;
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.show{
+	position: relative;
+}
+.show:hover #dropdown{
+	display: block;
+	position: absolute;
+	top: 100%;
+	z-index: 2;
+	background-color:rgb(13, 50, 105);
+	border: 0.5pt solid rgb(70, 130, 210);
+	border-radius: 7px;
+	
+}
+#dropdown li{
+	font-size: 12px;
+}
+.picture{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+#bannercontent{
+	position: absolute;
+	z-index: 2;
+	margin: 70px;
+	padding: 30px 100px 30px 30px;
+	border-radius: 25px 25px;
+	background-color: rgba(13, 50, 105, 0.75);
+	
+}
+#bannercontent p{
+	color: white;
+	line-height: 25px;
+}
+#bannercontent button{
+	background-color: rgb(254, 225, 86);
+	border-radius: 5px 5px;
+	margin: 5px;
+	padding: 10px;
+	font-size:12px;
+	font-weight: bold;
+	border: none;
+	color: rgb(13, 50, 105);
+}
+#bannercontent button:hover{
+	background-color: rgba(13, 50, 105);
+	color: white;
+}
+
+section{
+	position: absolute;
+	display: block;
+	width: 100%;
+	align-content: center;
+}
+#header {
+	margin-left:50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#content{
+	margin-left:30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.pic{
+	width: 100%;
+	height: 100px;
+}
+.box{
+	background-color:white;
+	width: 28%;
+	padding: 20px;
+	margin: 5px;
+	border-radius: 10px 10px;
+}
+h1{ 
+	font-size: 30px; 
+	color: rgb(13, 50, 105);
+	padding-top: 20px;
+}
+.info{
+	line-height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+.about{
+	padding-bottom: 10px;
+}
+.viewall{ 
+	font-weight: bold;  
+	padding-right: 40px;
+}
+.viewall a{
+	text-decoration: none;
+	color: rgb(13, 50, 105); 
+}
+.viewall a:hover{ 
+	border-bottom: 1px solid rgb(13, 50, 105);  
+}
+.lm{
+	background-color: rgb(13, 50, 105);
+	border-radius: 5px 5px;
+	padding: 10px;
+	font-size:12px;
+	font-weight: bold;
+	border: none;
+	color: white;
+	width: 150px;
+}
+.lm:hover{
+	background-color: rgb(254, 225, 86);
+	color: rgba(13, 50, 105);
+}
+.clubs{
+	padding:5px 10px;
+	border-radius: 5px;
+}
+#AandC{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	
+}
+#announcement{
+	border: 3px solid rgb(237, 247, 254);
+	border-radius: 5px;
+	overflow: auto;
+	height:425px;
+	width: 550px;
+	padding: 20px;
+	margin-left: 40px;
+}
+.heading{
+	color: rgb(13, 50, 105);
+	font-size: 25px;
+	padding: 10px;
+}
+#announce{
+	border-top: 2px solid rgb(237, 247, 254);
+	color: rgb(13, 50, 105);
+	padding: 10px;
+	
+}
+#announce p{
+	line-height: 25px;
+}
+#CandR{
+	background-color: rgb(237, 247, 254); 
+	border: 1pt solid rgb(160, 212, 252);
+	border-radius: 5px;
+	width: 550px;
+	height: 500px;
+	margin-right: 40px;
+}
+#form{
+	padding: 20px;
+	display: block;
+}
+#form p{
+	padding-bottom: 15px;
+}
+#form label{
+	color: rgb(13, 50, 105);
+}
+#form input, select, textarea{
+	padding: 5px;
+	border: 1px solid rgb(160, 212, 252);
+	border-radius: 5px;
+}
+
+#name, #email, #ID, #club, #message{
+	width: 100%;
+}
+#name:focus, #email:focus, #ID:focus, #club:focus, #message:focus{
+	box-shadow: 0px 0px 5px 5px rgb(160, 212, 252);
+	
+}
+#submit_button{
+	background-color: rgb(13, 50, 105);
+	border-radius: 5px 5px;
+	padding: 10px;
+	font-size:12px;
+	font-weight: bold;
+	border: none;
+	color: white;
+	width: 150px;
+	height: 35px;
+	margin-bottom: 5px;
+}
+#submit_button:hover{
+	background-color: rgb(254, 225, 86);
+	color: rgba(13, 50, 105);
+}
+#formMessage{
+	width: 95%;
+	background-color: rgb(241, 250, 240); 
+	border: 1pt solid rgb(168, 224, 179);
+	border-radius: 5px;
+	text-align: left;
+	color: green;
+	padding: 10px;
+	
+}
+#formMessage:empty {
+	display: none;
+}
+#counter{
+	float: right;
+	font-size: 10px;
+	color: rgba(13, 50, 105);
+}
+footer{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: rgb(13, 50, 105);
+	height: 100px;
+	width: 100%;
+	color: white;
+}
+footer p{
+	padding: 10px;
+	
+}
+footer a{
+	text-decoration: none;
+	color: white;
+	
+}
+footer a:hover{
+	color: rgb(254, 225, 86);
+}
+.address{
+	text-align: center;
+}
+@media print {
+	nav, button, #submit_button, .viewall, #CandR, .picture, footer{
+		display: none;
+	}
+	* {
+		background: none;
+		color: black;
+	}
+	body {
+		font-size: 12pt;
+		line-height: 1.5;
+	}
+	header, section, #AandC, footer {
+		position: static;
+		top: auto;
+		width: 100%;
+		height: auto;
+	}
+	#bannercontent{
+		position: static;
+		margin: 0;
+		padding: 10px 0;
+		color: black;
+	}
+	#announcement{
+		height: auto;
+		overflow: visible;
+		margin: 0;
+	}
+	section, #AandC{
+		margin-bottom: 20px;
+	}
+	.box{
+		margin-bottom: 10px;
+	}
+}
